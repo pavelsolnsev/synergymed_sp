@@ -1,0 +1,59 @@
+.faq {
+@media (max-width: 1199px) {
+    padding: 50px 0;
+    &__tabs {
+        &-item {
+            max-width: 436px;
+            font-size: 16px;
+        }
+        &-content {
+            max-width: 436px;
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    &__tabs {
+        &-content {
+            max-width: 360px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    padding: 40px 0;
+    &__box {
+        display: block;
+    }
+
+    &__tabs {
+        &-item {
+            max-width: 100%;
+            font-size: 18px;
+            &:last-child {
+                margin-bottom: 12px;
+            }
+        }
+        &-content {
+            position: static;
+            max-width: 100%;
+            margin-bottom: 24px;
+            padding: 0;
+            transition: all ease .3s;
+            &.active {
+                padding: 30px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+}
+}

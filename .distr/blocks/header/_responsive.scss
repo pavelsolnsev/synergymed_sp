@@ -1,0 +1,39 @@
+.header {
+	@media (max-width: 1199px) {
+		min-height: 90px;
+		// &__logo {
+		// 	max-width: 178px;
+		// }
+		&__content {
+			justify-content: flex-start;
+		}
+		&__menu, &__button {
+			display: none;
+		}
+		&__hamburger {
+			display: block;
+			margin-right: 20px;
+			.page-thanks & {
+				display: none;
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+	}
+	@media (max-width: 768px) {
+		&__logo {
+			flex: 0 0 auto;
+			display: flex;
+			align-items: center;
+			img {
+				&:nth-child(1) {
+					max-width: 154px;
+				}
+				&:nth-child(2) {
+					max-width: 125px;
+				}
+			}
+		}
+	}
+}

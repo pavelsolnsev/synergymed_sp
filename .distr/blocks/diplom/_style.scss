@@ -1,0 +1,19 @@
+.diplom {
+    padding: 70px 0;
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 4%;
+        grid-row-gap: 25px;
+    }
+
+    &__content {
+        width: 100%;
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 194%;
+            color: #3a3846;
+        }
+    }
+}

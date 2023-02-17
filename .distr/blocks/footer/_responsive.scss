@@ -1,0 +1,23 @@
+.footer {
+    @media (max-width: 1199px) {
+    }
+
+    @media (max-width: 991px) {
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px 0 110px;
+        &__box {
+            flex-direction: column;
+        }
+        &__logo {
+            margin-bottom: 32px;
+        }
+        &__developer {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 575px) {
+    }
+}

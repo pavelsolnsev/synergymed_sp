@@ -1,0 +1,43 @@
+.thanks {
+    padding: 160px 0;
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2%;
+        grid-row-gap: 28px;
+        align-items: center;
+    }
+    &__content {
+        &-title {
+            font-weight: 900;
+            font-size: 100px;
+            line-height: 90%;
+            color: $green;
+            margin-bottom: 12px;
+        }
+        &-subtitle {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 120%;
+            color: #0a0521;
+            margin-bottom: 32px;
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: #0a0521;
+            max-width: 380px;
+            margin-bottom: 15px;
+        }
+
+        &-button {
+            max-width: 173px;
+            height: 43px;
+            background: $green;
+            border: 1.5px solid $green;
+            border-radius: 4px;
+            color: #fff;
+        }
+    }
+}

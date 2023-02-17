@@ -1,0 +1,130 @@
+.header {
+    width: 100%;
+    min-height: 101px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    z-index: 9999;
+    position: fixed;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        img {
+            &:nth-child(1) {
+                max-width: 170px;
+            }
+            &:nth-child(2) {
+                max-width: 140px;
+            }
+        }
+    }
+
+    &__menu {
+        max-width: 542px;
+        width: 100%;
+        .page-thanks & {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        color: #0a0521;
+    }
+
+    &__button {
+        background: transparent;
+        padding: 12px 24px;
+        border: 1.5px solid $green;
+        font-weight: 600;
+        font-size: 16px;
+        color: #0a0521;
+        width: auto;
+        &:hover,
+        &:focus,
+        &:active {
+            background: $green;
+            color: #fff;
+            box-shadow: none;
+        }
+        .page-thanks & {
+            display: none;
+        }
+    }
+
+    &__hamburger {
+        display: none;
+    }
+}
+
+.menu-modal {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition: 0.7s;
+    overflow: hidden;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 67px;
+        &-close {
+            margin-right: 13px;
+        }
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: #11253d;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &_active {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+        padding: 20px;
+    }
+
+    &__button {
+        background: $green;
+        border-radius: 4px;
+        max-width: 173px;
+        height: 43px;
+        color: #fff;
+    }
+    .blocked-scroll {
+        overflow: hidden;
+    }
+}

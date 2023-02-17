@@ -1,0 +1,121 @@
+.advantages {
+    padding: 70px 0;
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2%;
+        grid-row-gap: 30px;
+    }
+    &__item {
+        border: 1px solid #cfd3d8;
+        border-radius: 5px;
+        padding: 20px;
+        height: 100%;
+        &:nth-child(1) {
+            p {
+                &::before {
+                    content: url("../img/advantages/icon-1.png");
+                }
+            }
+        }
+        &:nth-child(2) {
+            p {
+                &::before {
+                    content: url("../img/advantages/icon-2.png");
+                }
+            }
+        }
+        &:nth-child(3) {
+            p {
+                &::before {
+                    content: url("../img/advantages/icon-3.png");
+                }
+            }
+        }
+        &:nth-child(4) {
+            p {
+                &::before {
+                    content: url("../img/advantages/icon-4.png");
+                }
+            }
+        }
+        &:nth-child(5) {
+            p {
+                &::before {
+                    content: url("../img/advantages/icon-5.png");
+                }
+            }
+        }
+        &:nth-child(6) {
+            p {
+                &::before {
+                    content: url("../img/advantages/icon-6.png");
+                }
+            }
+        }
+        &:nth-child(7) {
+            p {
+                &::before {
+                    content: url("../img/advantages/icon-7.png");
+                }
+            }
+        }
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            color: #0a0521;
+            display: block;
+            &::before {
+                width: 70px;
+                height: 70px;
+                background: #ebf1ff;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+                line-height: 0;
+            }
+        }
+    }
+
+    .slick-list {
+        margin: 0 -7px;
+        padding-right: 90px;
+    }
+
+    .slick-slide {
+        margin: 0 7px;
+        > div {
+            height: 100%;
+        }
+    }
+
+    .slick-dots {
+        bottom: -40px;
+    }
+
+    .slick-dots li {
+        margin: 0 4px;
+        width: 11px;
+        height: 11px;
+    }
+
+    .slick-dots li.slick-active button::before {
+        background: $green;
+    }
+
+    .slick-dots li button::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 11px;
+        height: 11px;
+        content: "";
+        opacity: 1;
+        background: transparent;
+        border-radius: 100%;
+        border: 1.5px solid $green;
+    }
+}

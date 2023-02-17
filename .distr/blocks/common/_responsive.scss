@@ -1,0 +1,28 @@
+@import "var";
+@media (max-width: 1199px) {
+    .container {
+        max-width: 930px;
+    }
+
+    .title {
+        font-size: 48px;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+    .title {
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 120%;
+    }
+    .fixed {
+        display: flex;
+    }
+}
+
+@media (max-width: 575px) {
+}

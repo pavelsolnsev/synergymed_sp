@@ -1,0 +1,25 @@
+.footer {
+    padding: 40px 0;
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__developer {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: $green;
+    }
+
+    &__digital {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #0a0521;
+        a {
+            color: $green;
+        }
+    }
+}

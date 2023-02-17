@@ -1,0 +1,86 @@
+.program {
+    background: #F4F7F9;
+    padding: 70px 0;
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 121%;
+        color: #11253d;
+        margin-bottom: 50px;
+        span {
+            color: #009ba6;
+        }
+    }
+
+    &__box {
+        margin-bottom: 50px;
+        &-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 16px;
+            color: #11253d;
+            margin-bottom: 25px;
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            padding: 20px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 89%;
+            color: #707c8b;
+            margin-right: 10px;
+            border: 1px solid #cfd3d8;
+            box-sizing: border-box;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        li {
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-left: 17px;
+            margin-right: 10%;
+            &::before {
+                content: "";
+                display: block;
+                background: #ff7c9d;
+                border-radius: 4px;
+                height: 100%;
+                width: 2px;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            span {
+                font-weight: 900;
+                font-size: 52px;
+                line-height: 120%;
+                letter-spacing: 0.01em;
+                color: #11253d;
+                margin-right: 20px;
+            }
+            div {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 120%;
+                letter-spacing: 0.01em;
+                color: #11253d;
+            }
+        }
+    }
+}

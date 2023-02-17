@@ -1,0 +1,69 @@
+.faq {
+    padding: 70px 0;
+    background: #f4f7f9;
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 4%;
+        position: relative;
+    }
+    &__tabs {
+        &-item {
+            background: #ffffff;
+            border: 1.5px solid #e3e3e3;
+            border-radius: 6px;
+            max-width: 534px;
+            width: 100%;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+            color: #0a0521;
+            padding: 18px 36px;
+            margin-bottom: 12px;
+            &.active {
+                background: #e6f5f7;
+                border: 1.5px solid #009ba6;
+                border-radius: 6px;
+                color: $green;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-content {
+            background: #e6f5f7;
+            border: 1.5px solid $green;
+            box-sizing: border-box;
+            border-radius: 12px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            max-width: 555px;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            padding: 30px;
+           
+            &.active {
+                height: auto;
+                overflow: visible;
+                opacity: 1;
+                padding: 30px;
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 140%;
+                color: #009ba6;
+                margin-bottom: 24px;
+            }
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 140%;
+                color: #0a0521;
+            }
+        }
+    }
+}

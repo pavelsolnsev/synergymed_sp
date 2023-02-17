@@ -1,0 +1,63 @@
+.form {
+
+    @media (max-width: 1199px) {
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__items {
+            margin-bottom: 16px;
+        }
+
+        &__item {
+            margin-right: 10px;
+        }
+
+        &__button {
+            font-size: 16px;
+        }
+
+        &__footer {
+            &-text {
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        &__items {
+            flex-flow: column;
+            margin-bottom: 24px;
+        }
+
+        &__item {
+            margin-right: 0;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+        &__input {
+            height: 55px;
+        }
+
+        &__button {
+            height: 55px;
+        }
+
+        &__footer {
+            &-text {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            &-checkbox {
+                top: 2px;
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.info {
+    padding: 70px 0;
+    background-color: #f4f7f9;
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2%;
+        grid-row-gap: 30px;
+    }
+    &__item {
+        border: 1px solid #cfd3d8;
+        border-radius: 5px;
+        padding: 20px;
+        height: 100%;
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 181%;
+            color: #3a3846;
+            display: block;
+            &::before {
+                content: url("../img/info/icon.svg");
+                width: 43px;
+                height: 43px;
+                background: #e6f5f7;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+                line-height: 0;
+            }
+        }
+    }
+
+    .slick-list {
+        margin: 0 -7px;
+        padding-right: 90px;
+    }
+
+    .slick-slide {
+        margin: 0 7px;
+        > div {
+            height: 100%;
+        }
+    }
+
+    .slick-dots {
+        bottom: -40px;
+    }
+
+    .slick-dots li {
+        margin: 0 4px;
+        width: 11px;
+        height: 11px;
+    }
+
+    .slick-dots li.slick-active button::before {
+        background: $green;
+    }
+
+    .slick-dots li button::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 11px;
+        height: 11px;
+        content: "";
+        opacity: 1;
+        background: transparent;
+        border-radius: 100%;
+        border: 1.5px solid $green;
+    }
+}
